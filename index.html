@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Movimento Rehabilita Rio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f3f6f8;
+      --fg: #14232e;
+      --muted: #4a5d6b;
+      --accent: #0b6e69;
+      --accent-fg: #ffffff;
+      --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+      --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1a21; --fg: #e8eff3; --muted: #a3b5c1;
+        --accent: #3cc2b8; --accent-fg: #06201e; color-scheme: dark;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--body);
+      font-size: 1.125rem;
+      line-height: 1.6;
+      display: grid;
+      place-items: center;
+      padding-block: 48px;
+      padding-left: max(16px, env(safe-area-inset-left, 0px));
+      padding-right: max(16px, env(safe-area-inset-right, 0px));
+    }
+    main {
+      max-width: 40rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    h1 {
+      margin: 0;
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: clamp(2.25rem, 7vw, 3.75rem);
+      line-height: 1.05;
+      text-wrap: balance;
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.25rem;
+      max-width: 34rem;
+    }
+    .botao {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--accent-fg);
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1.125rem;
+      text-decoration: none;
+      padding: 0.85rem 1.75rem;
+      border-radius: 999px;
+      transition: transform 0.15s ease;
+    }
+    .botao:hover { transform: translateY(-2px); }
+    .botao:focus-visible { outline: 3px solid var(--fg); outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) { .botao { transition: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Movimento Rehabilita Rio</h1>
+    <p>Três instituições, um só movimento. Fique atento para novidades!</p>
+    <a class="botao" href="mailto:plucenabarbosa@gmail.com">Fale com a gente</a>
+  </main>
+</body>
+</html>
 plucenabarbosa@gmail.com
